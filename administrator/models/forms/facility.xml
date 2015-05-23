@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+
+              <field name="id" type="text" default="0" label="JGLOBAL_FIELD_ID_LABEL"
+                    readonly="true" class="readonly"
+                    description="JGLOBAL_FIELD_ID_DESC" /> 
+
+       <field name="name" type="text" size="40" class="inputbox"
+                 label="COM_FACILITIES_FORM_LBL_FACILITY_NAME" description="COM_FACILITIES_FORM_DESC_FACILITY_NAME" 
+                
+                
+                filter="safehtml" /> 
+
+       <field name="streetaddress" type="text" size="40" class="inputbox"
+                 label="COM_FACILITIES_FORM_LBL_FACILITY_STREETADDRESS" description="COM_FACILITIES_FORM_DESC_FACILITY_STREETADDRESS" 
+                
+                
+                filter="safehtml" /> 
+
+       <field name="hoursofoperation" type="text" size="40" class="inputbox"
+                 label="COM_FACILITIES_FORM_LBL_FACILITY_HOURSOFOPERATION" description="COM_FACILITIES_FORM_DESC_FACILITY_HOURSOFOPERATION" 
+                
+                
+                filter="safehtml" /> 
+
+       <field name="businesshoursphone" type="text" size="40" class="inputbox"
+                 label="COM_FACILITIES_FORM_LBL_FACILITY_BUSINESSHOURSPHONE" description="COM_FACILITIES_FORM_DESC_FACILITY_BUSINESSHOURSPHONE" 
+                
+                
+                filter="safehtml" /> 
+
+       <field name="email" type="text" size="40" class="inputbox"
+                 label="COM_FACILITIES_FORM_LBL_FACILITY_EMAIL" description="COM_FACILITIES_FORM_DESC_FACILITY_EMAIL" 
+                
+                
+                filter="safehtml" /> 
+
+       <field name="longitude" type="text" size="40" class="inputbox"
+                 label="COM_FACILITIES_FORM_LBL_FACILITY_LONGITUDE" description="COM_FACILITIES_FORM_DESC_FACILITY_LONGITUDE" 
+                
+                
+                filter="safehtml" /> 
+
+       <field name="latitude" type="text" size="40" class="inputbox"
+                 label="COM_FACILITIES_FORM_LBL_FACILITY_LATITUDE" description="COM_FACILITIES_FORM_DESC_FACILITY_LATITUDE" 
+                
+                
+                filter="safehtml" /> 
+
+       <field name="maplink" type="text" size="40" class="inputbox"
+                 label="COM_FACILITIES_FORM_LBL_FACILITY_MAPLINK" description="COM_FACILITIES_FORM_DESC_FACILITY_MAPLINK" 
+                
+                
+                filter="safehtml" /> 
+
+         <field
+                name="state"
+                type="list"
+                label="JSTATUS"
+                description="JFIELD_PUBLISHED_DESC"
+                class="inputbox"
+                size="1"
+                default="1">
+                <option value="1">JPUBLISHED</option>
+                <option value="0">JUNPUBLISHED</option>
+            </field> 
+
+                        <field name="checked_out" type="hidden" filter="unset" />
+                <field name="checked_out_time" type="hidden" filter="unset" />
+
+	</fieldset>
+
+</form>
