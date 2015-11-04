@@ -15,7 +15,7 @@ jimport('joomla.application.component.view');
 /**
  * View class for a list of Facilities.
  */
-class FacilitiesViewFacilities extends JView
+class FacilitiesViewFacilities extends JViewLegacy
 {
 	protected $items;
 	protected $pagination;
@@ -47,7 +47,7 @@ class FacilitiesViewFacilities extends JView
 	 */
 	protected function addToolbar()
 	{
-		require_once JPATH_COMPONENT.DS.'helpers'.DS.'facilities.php';
+		require_once JPATH_COMPONENT.'/helpers/facilities.php';
 
 		$state	= $this->get('State');
 		$canDo	= FacilitiesHelper::getActions($state->get('filter.category_id'));
@@ -55,7 +55,7 @@ class FacilitiesViewFacilities extends JView
 		JToolBarHelper::title(JText::_('COM_FACILITIES_TITLE_FACILITIES'), 'facilities.png');
 
         //Check if the form exists before showing the add/edit buttons
-        $formPath = JPATH_COMPONENT_ADMINISTRATOR.DS.'views'.DS.'facility';
+        $formPath = JPATH_COMPONENT_ADMINISTRATOR.'/views/facility';
         if (file_exists($formPath)) {
 
             if ($canDo->get('core.create')) {
