@@ -19,6 +19,6 @@ if (!JFactory::getUser()->authorise('core.manage', 'com_facilities')) {
 // Include dependancies
 jimport('joomla.application.component.controller');
 
-$controller	= JController::getInstance('Facilities');
+$controller	= JControllerLegacy::getInstance('Facilities');
 $controller->execute(JRequest::getCmd('task'));
 $controller->redirect();
