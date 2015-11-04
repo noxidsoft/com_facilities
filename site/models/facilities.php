@@ -18,7 +18,7 @@ JTable::addIncludePath(JPATH_ROOT . '/administrator/components/com_facilities/ta
 /**
  * Model
  */
-class FacilitiesModelFacilities extends JModel
+class FacilitiesModelFacilities extends JModelLegacy
 {
 	protected $_item;
 
