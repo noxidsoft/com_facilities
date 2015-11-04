@@ -12,7 +12,7 @@ defined('_JEXEC') or die;
 
 jimport('joomla.application.controller');
 
-class FacilitiesControllerFacilities extends JController
+class FacilitiesControllerFacilities extends JControllerLegacy
 {
 
 }
