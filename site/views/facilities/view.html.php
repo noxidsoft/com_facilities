@@ -15,7 +15,7 @@ jimport('joomla.application.component.view');
 /**
  * HTML View class for the Facilities component
  */
-class FacilitiesViewFacilities extends JView
+class FacilitiesViewFacilities extends JViewLegacy
 {
 	protected $state;
 	protected $item;
